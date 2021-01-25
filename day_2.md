@@ -194,7 +194,7 @@ Space Complexity: O(n)--res线性添加遍历出的节点
 ---
 
 
-[107:Binary Tree Zigzag Level Order Traversal 二叉树蛇形层级遍历](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+[103:Binary Tree Zigzag Level Order Traversal 二叉树蛇形层级遍历](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 题目：蛇形遍历，单数层正向排列，双数反之
 ```
 # Definition for a binary tree node.
