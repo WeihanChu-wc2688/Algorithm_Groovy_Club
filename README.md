@@ -2,7 +2,7 @@
 
 ## Weihan's algorithm showcase space
 
-## Welcome to my astroworld :star:
+### Welcome to my astroworld :star:
 ---
 [Day2: Binary Tree](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_2.md)
 
