@@ -75,36 +75,7 @@ Space Complexity: O(n)--res线性添加遍历出的节点
 ---
 
 
-[94:Binary Tree Postorder Traversal 二叉树后序遍历](https://leetcode.com/problems/binary-tree-postorder-traversal/)
-
-```
-class Solution(object):
-    ##道理同preorder,inorder
-    def postorderTraversal(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        res = []
-        self.dfs(root,res)
-        return res
-    
-    def dfs(self,root,res):
-        if root:
-            self.dfs(root.left,res)
-            self.dfs(root.right,res)
-            res.append(root.val)
-```
-
-**Analysis**
-
-Time Complexity: O(n)--每次调用递归进行遍历，每个点1次
-
-Space Complexity: O(n)--res线性添加遍历出的节点
-
----
-
-[94:Binary Tree Postorder Traversal 二叉树后序遍历](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+[145:Binary Tree Postorder Traversal 二叉树后序遍历](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 
 ```
 class Solution(object):
