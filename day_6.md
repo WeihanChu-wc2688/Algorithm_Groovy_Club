@@ -87,7 +87,7 @@ Time Complexity:
 Space Complexity: 
 
 ---
-[437. Path Sum III](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+[129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
 ```
 #使用递归完成。我们要做的是 把左右子树的path加起来。
