@@ -67,5 +67,28 @@
 
 * 快速排序，归并排序
 
-* Leetcode/Lintcode coverage: 75, 215, 148, 1157, 
+* Leetcode/Lintcode coverage: 75, 215, 148, 1157
 
+---
+
+[Day10: Dynamic Programing_coordinate](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_10.md)
+
+* 坐标型动态规划
+
+* Leetcode/Lintcode coverage: 746， 70， 198， 674， 62， 109， 63， 64， 361
+
+---
+
+[Day11: Dynamic Programing_series](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_11.md)
+
+* 序列型动态规划
+
+* Leetcode/Lintcode coverage: 1143， 256， 198， 213， 139， 121
+
+---
+
+[Day12: Dynamic Programing_backpack](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_11.md)
+
+* 背包型动态规划
+
+* Lintcode coverage: 92，125， 563， 800， 1538， 724， 440， 562， 801， 749， 700， 669， 798， 799
