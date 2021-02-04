@@ -295,45 +295,7 @@ Space Complexity:
 
 ---
 
-[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
 
-```python
-#累加类型的坐标dp模板，有两点注意：
-
-class Solution(object):
-    def minPathSum(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
-        if not grid:
-            return 0
-        m = len(grid)
-        n = len(grid[0])
-        dp = [[0]*n for _ in range(m)]
-        #！！！！！！！！！！！！！！
-        #方案累加，头结点要提前设好！要不然在循环里会被遍历两次加重复一遍！
-        dp[0][0] = grid[0][0]
-        #因为要求path sum，边界值不是直接设定而是累加！是每一个结点上一步累加得来的！跟方案总和区别！
-        for i in range(1,m):
-            dp[i][0] = dp[i-1][0] + grid[i][0]
-            
-        for i in range(1,n):
-            dp[0][i] = dp[0][i-1] + grid[0][i]
-        
-        for i in range(1,m):
-            for j in range(1,n):
-                dp[i][j] = min(dp[i-1][j],dp[i][j-1]) + grid[i][j]
-                
-        return dp[m-1][n-1]     
-```
-**Analysis**
-
-Time Complexity: 
-
-Space Complexity: 
-
----
 
 [361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)
 
