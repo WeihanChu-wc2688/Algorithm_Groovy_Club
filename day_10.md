@@ -334,3 +334,73 @@ Time Complexity:
 Space Complexity: 
 
 ---
+
+[361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)
+
+```python
+#思路：建立四个方向上的matrix存储每个坐标每个方向上能炸死的人数，最后用res迭代取每个0点的上下左右四个matrix里同位人数加和最大值即为炸死最多的位置
+class Solution(object):
+    def maxKilledEnemies(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        if len(grid) == 0:
+            return 0
+        row = len(grid)
+        col = len(grid[0])
+        
+        up = [[0] * col for _ in range(row)]
+        down = [[0] * col for _ in range(row)]
+        left = [[0] * col for _ in range(row)]
+        right = [[0] * col for _ in range(row)]
+        #新up matrix里每个坐标存贮着grid每个坐标上面炸死的人数
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] != 'W':
+                    if grid[i][j] == 'E':
+                        up[i][j] = 1
+                    #递归条件，当不为边界时当前坐标人数等于上一部坐标累加得来    
+                    if i > 0:
+                        up[i][j] += up[i-1][j]
+        #同理为新down matrix，记得处理坐标和状态转移方程                
+        for i in range(row-1, -1, -1):
+            for j in range(col):
+                if grid[i][j] != 'W':
+                    if grid[i][j] == 'E':
+                        down[i][j] = 1
+                    if i + 1 < row:
+                        down[i][j] += down[i+1][j]
+        
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] != 'W':
+                    if grid[i][j] == 'E':
+                        left[i][j] = 1
+                    if j > 0:
+                        left[i][j] += left[i][j-1]
+        
+        for i in range(row):
+            for j in range(col-1,-1,-1):
+                if grid[i][j] != 'W':
+                    if grid[i][j] == 'E':
+                        right[i][j] = 1
+                    if j + 1 < col:
+                        right[i][j] += right[i][j+1]
+        
+        res = 0
+        #搜寻grid里每个0点上下左右加起来能炸死多少，然后用res迭代记录最大值
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] == '0':
+                    res = max(res,up[i][j]+down[i][j]+left[i][j]+right[i][j])
+        
+        return res 
+```
+**Analysis**
+
+Time Complexity: 
+
+Space Complexity: 
+
+---
