@@ -87,8 +87,24 @@
 
 ---
 
-[Day12: Dynamic Programing_backpack](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_11.md)
+[Day12: Dynamic Programing_backpack](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_12.md)
 
 * 背包型动态规划
 
 * Lintcode coverage: 92，125， 563， 800， 1538， 724， 440， 562， 801， 749， 700， 669， 798， 799
+
+---
+
+[Day13: List: 2-pointer](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_13.md)
+
+* 数组专题-游标操作
+
+* Leetcode coverage: 88, 6, 39, 54, 189, 144, 414, 66, 1053, 31, 387
+
+---
+
+[Day14: List: prefixSum](https://github.com/WeihanChu-wc2688/Algorithm_Groovy_Club/blob/main/day_14.md)
+
+* 数组专题-前缀和
+
+* Leetcode coverage: 560， 206， 53， 44， 523， 238
